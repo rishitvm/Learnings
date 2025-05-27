@@ -77,7 +77,7 @@ This is a mini FastAPI project that manages patient health records using a JSON 
 | GET    | `/about`                | About the project                     |
 | GET    | `/view`                 | View all patients                     |
 | GET    | `/patient/{id}`         | Get specific patient by ID            |
-| GET    | `/sort`                 | Sort patients by height/weight/BMI    |
+| GET    | `/sort`                 | Sort patients by height/weight/bmi    |
 | POST   | `/create`               | Add a new patient                     |
 | PUT    | `/edit/{id}`            | Update existing patient info          |
 | DELETE | `/delete/{id}`          | Delete a patient                      |
