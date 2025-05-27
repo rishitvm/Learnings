@@ -1,6 +1,6 @@
 # Gen AI Learnings
 
-This repository contains a series of Jupyter Notebooks implementing foundational and advanced Gen AI models from scratch using NumPy and PyTorch.
+This repository contains a series of Notebooks implementing foundational and advanced Concepts of Gen AI models from scratch using NumPy and PyTorch.
 
 ---
 
