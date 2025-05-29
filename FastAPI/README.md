@@ -31,3 +31,8 @@ This is a mini FastAPI project that manages patient health records using a JSON 
 
 ---
 
+### `model_api_interaction.py`
+
+It contains a short code of calling a Hugging Face model and interacting and connecting to it using FastAPI
+
+---
