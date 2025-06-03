@@ -58,3 +58,10 @@ Demonstrates local attention using a sliding window over tokens.
 - Similar to: Longformer-style models
 
 ---
+
+### `LoRA_Peft_Finetuning.ipynb`
+Implements LoRA Finetuning using inbuilt modules form PEFT Library. Once LoRA is applied, GPTQ Quanitsation is performed and the quantised model is tested again for inference.
+
+- Use case: Fine tuning a model with freezing the pre-trained weights.
+
+---
