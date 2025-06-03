@@ -65,3 +65,9 @@ Implements LoRA Finetuning using inbuilt modules form PEFT Library. Once LoRA is
 - Use case: Fine tuning a model with freezing the pre-trained weights.
 
 ---
+
+### `VLLM_Inference.ipynb`
+This notebook makes use of VLLM interface to make an inference on Facebook - opt & Falcon-rw model
+- Use Case: Memory Optimisation through Paged Attention which is highly useful for Inference.
+
+---
