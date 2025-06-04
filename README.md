@@ -14,6 +14,11 @@ Implements the Continuous Bag of Words (CBOW) model from scratch using NumPy. It
 
 ---
 
+### `Image_Captioning_with_Attention.ipynb`
+Implementation of Attention mechanism and using it in Image Captioning Task. Attention in large language models (LLMs) is the core mechanism that allows the model to focus on different parts of the input when producing an output. Image Captioning with Attention is a technique in deep learning where a model generates natural language descriptions for images while selectively focusing on specific parts of the image at each step of the caption generation. Rather than looking at the entire image equally when predicting each word, the model attends to different regions of the image dynamically. Usage of CNN Encoder (VGG-19) + Bahdanau Attention + LSTM/GRU (Decoder).
+
+---
+
 ### `Transformer_Scratch.ipynb`
 A full NumPy-based implementation of the original Transformer architecture.
 
