@@ -82,6 +82,11 @@ This notebook consists od various Quantisation Techniques like Post Training Qua
 
 ---
 
+### `RLHF_Scratch.ipynb`
+This repository demonstrates a complete Reinforcement Learning from Human Feedback (RLHF) pipeline applied to a language model, showcasing the training and alignment of a base language model through several stages. We begin with a pre-trained causal language model (DistilGPT2) and first fine-tune it using Supervised Fine-Tuning (SFT) on the OpenAssistant/oasst1 dataset, where prompt-response pairs are extracted to teach the model to produce helpful assistant-like replies. The next phase involves reward modeling, where a reward model (OpenAssistant's DeBERTa-v3) is used to evaluate the quality of responses based on human-preference-aligned judgment. Using this reward model, we apply Proximal Policy Optimization (PPO), a policy-gradient reinforcement learning algorithm, to further optimize the SFT model so that it generates outputs that receive higher reward scores. We also explore Direct Preference Optimization (DPO), a simpler yet effective method that aligns the model directly to human preferences using paired comparisons between “chosen” and “rejected” responses, bypassing the need for an explicit reward model. RLAF (Reinforcement Learning with Attribute Feedback), which goes beyond scalar feedback by optimizing across multiple attributes (such as helpfulness, factuality, and toxicity). This phase integrates multiple reward signals to train the model using a multi-objective version of PPO, enabling more nuanced alignment. We train (N) reward models to get the (N) sized Reward vector.
+
+---
+
 ### `BERT_NER_Fine_Tuning.ipynb`
 This notebook consists of making use of a Base BERT Model and Fine tuning the model with a NER Dataset consists of various NER Tags. LoRA fine tuning is performed in this task. BERT is a Encoder Only model used for various tasks like Q&A, MLM, NSP, NER, Sentence Classification and many more. It is trained using left and right contexts. NER (Named Entity Recognition) is a token based task where each token is given a particulat NER Tag depending on it's context like Person / Organisation / Location or any other.
 
