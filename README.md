@@ -71,3 +71,10 @@ This notebook makes use of VLLM interface to make an inference on Facebook - opt
 - Use Case: Memory Optimisation through Paged Attention which is highly useful for Inference.
 
 ---
+
+### `Quantisation_Techniques.ipynb`
+This notebook consists od various Quantisation Techniques like Post Training Quantisations like QLoRA (Quantised LoRA), GPTQ (Generalized Post-Training Quantization), AWQ (Activation-Aware Weight Quantization) which are highly helpful duirng model infernce which reduces the memory footprint for storing the model weights during model inference or any other tasks done locally.
+
+---
+
+### 
