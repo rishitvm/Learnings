@@ -77,4 +77,7 @@ This notebook consists od various Quantisation Techniques like Post Training Qua
 
 ---
 
-### 
+### `BERT_NER_Fine_Tuning.ipynb`
+This notebook consists of making use of a Base BERT Model and Fine tuning the model with a NER Dataset consists of various NER Tags. LoRA fine tuning is performed in this task. BERT is a Encoder Only model used for various tasks like Q&A, MLM, NSP, NER, Sentence Classification and many more. It is trained using left and right contexts. NER (Named Entity Recognition) is a token based task where each token is given a particulat NER Tag depending on it's context like Person / Organisation / Location or any other.
+
+---
