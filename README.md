@@ -91,3 +91,8 @@ This repository demonstrates a complete Reinforcement Learning from Human Feedba
 This notebook consists of making use of a Base BERT Model and Fine tuning the model with a NER Dataset consists of various NER Tags. LoRA fine tuning is performed in this task. BERT is a Encoder Only model used for various tasks like Q&A, MLM, NSP, NER, Sentence Classification and many more. It is trained using left and right contexts. NER (Named Entity Recognition) is a token based task where each token is given a particulat NER Tag depending on it's context like Person / Organisation / Location or any other.
 
 ---
+
+### `rag-scienceqa.ipynb`
+This project implements a complete Retrieval-Augmented Generation (RAG) pipeline for the ScienceQA dataset, designed to answer science-related questions with high accuracy. It uses a fine-tuned MiniLM model to embed scientific documents, which are stored in ChromaDB for efficient retrieval. Given a user query, the system retrieves top-k relevant contexts and reranks them using a cross-encoder to ensure semantic relevance. A T5 model is then used to generate the final answer based on the reranked context and the original question. This end-to-end system showcases how semantic retrieval and generative models can be integrated for domain-specific question answering, making it ideal for educational tools and factual information systems.
+
+---
