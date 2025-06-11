@@ -99,7 +99,7 @@ This project implements a complete Retrieval-Augmented Generation (RAG) pipeline
 
 ### `GPT2_Finetuned_Math_Q&A_Dockered.txt`
 
-### GPT-2 Fine-Tuned on GSM8K for Math Question Answering
+#### GPT-2 Fine-Tuned on GSM8K for Math Question Answering
 
 This project demonstrates how to fine-tune a GPT-2 model on the GSM8K dataset for solving grade-school level math problems. It includes:
 
