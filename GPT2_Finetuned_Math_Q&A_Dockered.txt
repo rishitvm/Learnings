@@ -1,0 +1,26 @@
+
+This project fine-tunes a base GPT-2 model using the Math dataset [openai/gsm8k](https://huggingface.co/datasets/openai/gsm8k).
+
+The fine-tuned model is deployed with:
+- ✅ A FastAPI backend that serves the model through POST requests.
+- ✅ A Streamlit frontend that allows interactive user input.
+- ✅ The full project is Dockerized and available on Docker Hub as: 
+  rishit89/gpt2_mathqa
+
+🚀 How to Use:
+
+1. Install Docker Desktop (https://www.docker.com/products/docker-desktop)
+2. Open a terminal (PowerShell, Git Bash, or Docker CLI)
+3. Pull the Docker image:
+   docker pull rishit89/gpt2_mathqa
+
+4. Run the container:
+   docker run -p 8501:8501 -p 8000:8000 rishit89/gpt2_mathqa
+
+5. Access the Streamlit interface:
+   👉 http://localhost:8501
+
+6. The FastAPI backend is also running (by default) at:
+   👉 http://localhost:8000
+
+You can now interact with the GPT-2 model either from the Streamlit UI.
