@@ -111,9 +111,9 @@ This project demonstrates how to fine-tune a GPT-2 model on the GSM8K dataset fo
 
 #### Project Structure
 
-- `model/`: Saved fine-tuned GPT-2 model.
+- `gpt2-lora-gsm8k-merged`: Saved fine-tuned GPT-2 model.
 - `app.py`: FastAPI server to serve the model via REST API.
-- `streamlit_app.py`: Streamlit interface to interact with the model.
+- `frontend.py`: Streamlit interface to interact with the model.
 - `Dockerfile`: Instructions to build the Docker image.
 - `supervisord.conf`: Used to run both FastAPI and Streamlit simultaneously inside Docker.
 
