@@ -120,6 +120,6 @@ This project demonstrates how to fine-tune a GPT-2 model on the GSM8K dataset fo
 ---
 
 ### `Coding_Agent.zip`
-This project deals with creation of a coding agent by using a base model "llama-3.1-8b-instant" using GROQ API. This agent takes in the input like a Coding Question and generated a code for that and also saves that code locally inside the server. Then the llm takes inputs and uses the saved code to run using subprocess and gives out the outputs for tha respective inputs. The server along with FastAPI runs in a docker and the client code i.e. the streamlit one runs in another docker. Now both these dockers are composed together with docker 2 depending on docker 1. 
+This project deals with creation of a coding agent by using a base model "llama-3.1-8b-instant" using GROQ API. This agent takes in the input like a Coding Question and generates a code for that and also saves that code locally inside the server. Then the LLM takes inputs and uses the saved code to run on those inputs using subprocess and gives out the outputs for those respective inputs. The server along with FastAPI runs in a docker and the client code i.e. the streamlit one runs in another docker. Now both these dockers are composed together with docker 2 depending on docker 1 using a .yml file. 
 
 ---
