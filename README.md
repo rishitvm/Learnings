@@ -130,7 +130,7 @@ Key Learnings:
 ---
 
 ### `Agent_using_MCP.zip`
-This agent is built to get familiar with the usage of MCP Tools by using already built respective MCP Servers. It uses "qwen-qwq-32b" as an LLM to reason and complete it's goal. The MCP Tools used are "playwright" for webpage interaction, "arxiv" for fetching research papers, "airbnb" to interact with hotels, "weather" to get the weather. All these are tested in Cursor IDE (a very goog IDE to interact with MCP Agents).
+This agent is built to get familiar with the usage of MCP Tools by using already built respective MCP Servers. It uses "qwen-qwq-32b" as an LLM to reason and complete it's goal. The MCP Tools used are "playwright" for webpage interaction, "arxiv" for fetching research papers, "airbnb" to interact with hotels, "weather" to get the weather. All these are tested in Cursor IDE (a very good IDE to interact with MCP Agents).
 
 ---
 
