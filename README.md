@@ -4,11 +4,11 @@ This repository contains a collection of notebooks and mini-projects that explor
 
 Key tools and technologies used include:
 
--🧠 Gen AI models – Implemented and fine-tuned using PyTorch and Transformers (some built from scratch, others using pretrained models)
--🤖 Agentic AI workflows – Built custom multi-agent systems for reasoning and decision making
--🖥️ Frontend UI – Designed with Streamlit for interactive applications
--🚀 Backend APIs – Developed with FastAPI for serving models and processing logic
--📦 Deployment – Containerized projects using Docker for portability and scalability
+- 🧠 Gen AI models – Implemented and fine-tuned using PyTorch and Transformers (some built from scratch, others using pretrained models)
+- 🤖 Agentic AI workflows – Built custom multi-agent systems for reasoning and decision making
+- 🖥️ Frontend UI – Designed with Streamlit for interactive applications
+- 🚀 Backend APIs – Developed with FastAPI for serving models and processing logic
+- 📦 Deployment – Containerized projects using Docker for portability and scalability
 
 
 ## 📁 Contents
