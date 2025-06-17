@@ -103,11 +103,10 @@ This project implements a complete Retrieval-Augmented Generation (RAG) pipeline
 
 This project demonstrates how to fine-tune a GPT-2 model on the GSM8K dataset for solving grade-school level math problems. It includes:
 
-- ✅ A fine-tuned GPT-2 model using OpenAI's GSM8K dataset.
-- 🚀 A FastAPI backend to handle inference requests from clients.
-- 🎯 A Streamlit frontend that provides an interactive UI to test the model's predictions.
-- 🐳 Full Dockerization for portability and ease of deployment.
-- 🔗 Available on Docker Hub: `rishit89/gpt2_mathqa`
+-  A fine-tuned GPT-2 model using OpenAI's GSM8K dataset.
+-  A FastAPI backend to handle inference requests from clients.
+-  A Streamlit frontend that provides an interactive UI to test the model's predictions.
+-  Full Dockerization for portability and ease of deployment.
 
 #### Project Structure
 
