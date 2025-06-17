@@ -130,4 +130,13 @@ This project also deals with creation of a coding agent by using a base model "l
 ---
 
 ### `Medical_Agent_CrewAI.zip`
-This mini project deals with reading PDF Medical Documents / Reports and Scraping a particular medical website for recommending respective prescription using CrewAI Tools. The base LLM model used here for reasoning and generating is "llama-3.1-8b-instant". CrewAI is a framework wich is used to make use of multiple AI agents to collaborate with each other to acheive a particular goal. It mainly makes use of 4 files namely agents, tools, tasks, crew.py files. 
+This mini-project demonstrates how to read PDF medical documents, analyze lab reports, symptoms and diagnosis using a powerful LLM, and scrape medical websites to recommend accurate prescriptions. It uses CrewAI — a collaborative multi-agent AI framework — and the llama-3.1-8b-instant model from Groq for reasoning and summarization.
+
+What It Does
+- Reads and parses medical reports (PDF) using CrewAI Tool
+- Scrapes a trusted medical website for prescription recommendations using CrewAI Tool
+- Summarizes each case using LLM
+- Uses multiple CrewAI agents (e.g., summarizer, recommender)
+- Writes the generated summary and prescription
+
+---
