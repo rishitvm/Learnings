@@ -1,7 +1,13 @@
-# 🤖 Gen AI Learnings
+# 🤖 Gen AI & Agentic AI Learnings
 
-This repository contains a series of Notebooks and zip files implementing foundational and advanced Concepts of 🧠 Gen AI models and 🤖 Agentic AI workflows along with 🚀 FastAPI (as Backend API), 🖥️ Streamlit (as Frontend UI) and 📦 Docker (for deployment). Few concepts are done from scratch (using PyTorch and NumPy) and few are mini projects for practice.
+This repository contains a collection of notebooks and mini-projects that explore both foundational and advanced concepts in Generative AI and Agentic AI.
 
+Key tools and technologies used include:
+🧠 Gen AI models – Implemented and fine-tuned using PyTorch and Transformers (few from scratch and few direct)
+🤖 Agentic AI workflows – Built mini projects for practice using custom agent logic
+🖥️ Frontend UI – Built with Streamlit for interactive user interfaces
+🚀 Backend APIs – Powered by FastAPI for model inference and logic orchestration
+📦 Deployment – Containerized and managed using Docker
 ---
 
 ## 📁 Contents
@@ -107,14 +113,6 @@ This project demonstrates how to fine-tune a GPT-2 model on the GSM8K dataset fo
 -  A FastAPI backend to handle inference requests from clients.
 -  A Streamlit frontend that provides an interactive UI to test the model's predictions.
 -  Full Dockerization for portability and ease of deployment.
-
-#### Project Structure
-
-- `gpt2-lora-gsm8k-merged`: Saved fine-tuned GPT-2 model.
-- `app.py`: FastAPI server to serve the model via REST API.
-- `frontend.py`: Streamlit interface to interact with the model.
-- `Dockerfile`: Instructions to build the Docker image.
-- `supervisord.conf`: Used to run both FastAPI and Streamlit simultaneously inside Docker.
 
 ---
 
