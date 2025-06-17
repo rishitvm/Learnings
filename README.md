@@ -128,3 +128,6 @@ This project deals with creation of a coding agent by using a base model "llama-
 This project also deals with creation of a coding agent by using a base model "llama-3.1-8b-instant" using GROQ API. This agent takes in the input like a Coding Question and generates a code for that and also saves that code locally inside the server but these all are done using MCP (Model Context Protocol). Here the MCP defines 2 tools, one for code generation and one for running the code. Then the LLM takes inputs and uses the saved code to run on those inputs using subprocess and gives out the outputs for those respective inputs. The server along with FastAPI runs in a docker and the client code i.e. the streamlit one runs in another docker. Now both these dockers are composed together with docker 2 depending on docker 1 using a .yml file.
 
 ---
+
+### `Medical_Agent_CrewAI.zip`
+This mini project deals with reading PDF Medical Documents / Reports and Scraping a particular medical website for recommending respective prescription using CrewAI Tools. The base LLM model used here for reasoning and generating is "llama-3.1-8b-instant". CrewAI is a framework wich is used to make use of multiple AI agents to collaborate with each other to acheive a particular goal. It mainly makes use of 4 files namely agents, tools, tasks, crew.py files. 
