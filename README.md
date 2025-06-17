@@ -119,6 +119,16 @@ This project demonstrates how to fine-tune a GPT-2 model on the GSM8K dataset fo
 
 ---
 
+### `Weather_Agent.zip`
+This basic project deals with the use of Agent to fetech the weather from a specific location through API Call as a tool. This project is built till end i.e. deployment. It uses FastAPI for API integration with Streamlit as a UI (client). This is also dockerized but not yet pushed to the Docker Hub.
+
+Key Learnings
+- Usage of Langchain Agents
+- Usage of external APIs as tools which agent uses
+- FastAPI Integeration with a UI PLatform
+
+---
+
 ### `Coding_Agent.zip`
 This project deals with creation of a coding agent by using a base model "llama-3.1-8b-instant" using GROQ API. This agent takes in the input like a Coding Question and generates a code for that and also saves that code locally inside the server. Then the LLM takes inputs and uses the saved code to run on those inputs using subprocess and gives out the outputs for those respective inputs. The server along with FastAPI runs in a docker and the client code i.e. the streamlit one runs in another docker. Now both these dockers are composed together with docker 2 depending on docker 1 using a .yml file. 
 
