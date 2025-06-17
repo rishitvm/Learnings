@@ -10,7 +10,7 @@ Key tools and technologies used include:
 - 🚀 Backend APIs – Developed with FastAPI for serving models and processing logic
 - 📦 Deployment – Containerized projects using Docker for portability and scalability
 
-Various models from (Llama, GPT, Mistral, Qwen, Gemma, Falcon etc.,.) are used in this repository
+Various models from (Llama, GPT, Mistral, Qwen, Gemma, Falcon etc.,.) are used in this repository.  
 Various frameworks like (Langchain, Langgraph, CrewAI) are also used for Agentic systems.
 
 ## 📁 Contents
