@@ -1,13 +1,13 @@
 # 🤖 Gen AI & Agentic AI Learnings
 
 This repository contains a collection of notebooks and mini-projects that explore both foundational and advanced concepts in Generative AI and Agentic AI.
-
+###
 Key tools and technologies used include:
-🧠 Gen AI models – Implemented and fine-tuned using PyTorch and Transformers (few from scratch and few direct)
-🤖 Agentic AI workflows – Built mini projects for practice using custom agent logic
-🖥️ Frontend UI – Built with Streamlit for interactive user interfaces
-🚀 Backend APIs – Powered by FastAPI for model inference and logic orchestration
-📦 Deployment – Containerized and managed using Docker
+-🧠 Gen AI models – Implemented and fine-tuned using PyTorch and Transformers (few from scratch and few direct)
+-🤖 Agentic AI workflows – Built mini projects for practice using custom agent logic
+-🖥️ Frontend UI – Built with Streamlit for interactive user interfaces
+-🚀 Backend APIs – Powered by FastAPI for model inference and logic orchestration
+-📦 Deployment – Containerized and managed using Docker
 ---
 
 ## 📁 Contents
