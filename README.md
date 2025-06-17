@@ -1,6 +1,6 @@
-# Gen AI Learnings
+# 🤖 Gen AI Learnings
 
-This repository contains a series of Notebooks implementing foundational and advanced Concepts of Gen AI models from scratch using NumPy and PyTorch.
+This repository contains a series of Notebooks and zip files implementing foundational and advanced Concepts of 🧠 Gen AI models and 🤖 Agentic AI workflows along with 🚀 FastAPI (as Backend API), 🖥️ Streamlit (as Frontend UI) and 📦 Docker (for deployment). Few concepts are done from scratch (using PyTorch and NumPy) and few are mini projects for practice.
 
 ---
 
