@@ -180,4 +180,6 @@ What I did:
 - Implemented two approaches: From scratch and inbuilt Speculative Decoding
 - Inference (Inbuilt): Over 38% Speedup is seen.
 
+It also consists of another comaprision with  N-Gram.
+
 ---
