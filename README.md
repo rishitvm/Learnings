@@ -101,7 +101,7 @@ This notebook consists of making use of a Base BERT Model and Fine tuning the mo
 
 ---
 
-### `rag-scienceqa.ipynb`
+### `RAG-ScienceQA.ipynb`
 This project implements a complete Retrieval-Augmented Generation (RAG) pipeline for the ScienceQA dataset, designed to answer science-related questions with high accuracy. It uses a fine-tuned MiniLM model to embed scientific documents, which are stored in ChromaDB for efficient retrieval. Given a user query, the system retrieves top-k relevant contexts and reranks them using a cross-encoder to ensure semantic relevance. A T5 model is then used to generate the final answer based on the reranked context and the original question. This end-to-end system showcases how semantic retrieval and generative models can be integrated for domain-specific question answering, making it ideal for educational tools and factual information systems.
 
 ---
@@ -134,7 +134,7 @@ This agent is built to get familiar with the usage of MCP Tools by using already
 
 ---
 
-### `chatbot_langgraph.ipynb`
+### `Chatbot_Langgraph.ipynb`
 This Chatbot is built completely using Langgraph (a framework for building stateful, multi-step reasoning workflows with Large Language Models (LLMs)). Tools used in this project are Arxiv, Wikipedia and Tavily Search. This chatbot makes use of 2 LLMs for reasoning. The aim of this chatbot is to get the Research Papers, Wikipedia content and general web searching using Tavily.
 
 Flow of the ChatBot:
