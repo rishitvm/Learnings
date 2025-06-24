@@ -182,7 +182,7 @@ What I did:
 
 ---
 
-### `PaddleOCR_Text_Fining.ipynb`
+### `PaddleOCR_Text_Finding.ipynb`
 This work aims to build a small pipeline which uses PaddleOCR, one of the strongest complete OCR pipeline which can detect text, change and understand the orientation and finally recognizes the text in the detected area. Here we store the extracted text along with it's respective documents and line number where it is found. Given a word or small sentence, it searches for the text and retrieves the document ID and line number along with confidence.
 
 ---
