@@ -189,9 +189,9 @@ This work aims to build a small pipeline which uses PaddleOCR, one of the strong
 
 ### `YOLOv8_with_TrOCR_Finetuning.ipynb`
 This project implements an OCR pipeline for extracting text from receipt images. Here we finetune YOLOv8 for detecting text regions and also finetune TrOCR model (by Microsoft) with LoRA for recognizing the text. SROIEv2 dataset form Kaggle is used in this work.
-- YOLOv8 detects bounding boxes around text lines.
+- Finetuned YOLOv8 detects bounding boxes around text lines.
 - The detected regions are cropped from the original image.
-- TrOCR takes each cropped image and generates the corresponding text.
+- LoRA Finetuned TrOCR takes each cropped image and generates the corresponding text.
 - The outputs are visualized and optionally stored for downstream processing.
 
 ---
