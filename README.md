@@ -12,6 +12,7 @@ Key tools and technologies used include:
 
 Various models from (Llama, GPT, Mistral, Qwen, Gemma, Falcon etc.,.) are used in this repository.  
 Various frameworks like (Langchain, Langgraph, CrewAI) are also used for Agentic systems.
+OCR Models like (TrOCR, PaddleOCR, LayoutLM, Donut)
 
 ## 📁 Contents
 
