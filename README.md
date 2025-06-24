@@ -181,3 +181,17 @@ What I did:
 - Inference (Inbuilt): Over 38% Speedup is seen.
 
 ---
+
+### `PaddleOCR_Text_Fining.ipynb`
+This work aims to build a small pipeline which uses PaddleOCR, one of the strongest complete OCR pipeline which can detect text, change and understand the orientation and finally recognizes the text in the detected area. Here we store the extracted text along with it's respective documents and line number where it is found. Given a word or small sentence, it searches for the text and retrieves the document ID and line number along with confidence.
+
+---
+
+### `YOLOv8_with_TrOCR_Finetuning.ipynb`
+This project implements an OCR pipeline for extracting text from receipt images. Here we finetune YOLOv8 for detecting text regions and also finetune TrOCR model (by Microsoft) with LoRA for recognizing the text. SROIEv2 dataset form Kaggle is used in this work.
+- YOLOv8 detects bounding boxes around text lines.
+- The detected regions are cropped from the original image.
+- TrOCR takes each cropped image and generates the corresponding text.
+- The outputs are visualized and optionally stored for downstream processing.
+
+---
