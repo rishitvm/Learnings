@@ -196,3 +196,8 @@ This project implements an OCR pipeline for extracting text from receipt images.
 - The outputs are visualized and optionally stored for downstream processing.
 
 ---
+
+### `CLIP_XRays_Finetuning.ipynb`
+This project aims to fine-tune the CLIP (Contrastive Language–Image Pre-training) model of OpenAI on the MIMIC-CXR dataset to enable accurate alignment between chest X-ray images and their corresponding radiology findings. CLIP is a vision-language model that learns to embed images and text into a shared space using contrastive learning. To adapt it efficiently for the medical domain, we applied Low-Rank Adaptation (LoRA), allowing us to fine-tune only ~0.03% of the model’s parameters while preserving performance. The model is trained with a custom contrastive loss to bring matching image-text pairs closer and push mismatched ones apart. An inference pipeline is also provided, which takes an input X-ray image and a set of candidate sentences, and returns the most semantically relevant one based on similarity in the embedding space.
+
+---
