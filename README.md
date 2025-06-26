@@ -201,3 +201,14 @@ This project implements an OCR pipeline for extracting text from receipt images.
 This project aims to fine-tune the CLIP (Contrastive Language–Image Pre-training) model of OpenAI on the MIMIC-CXR dataset to enable accurate alignment between chest X-ray images and their corresponding radiology findings. CLIP is a vision-language model that learns to embed images and text into a shared space using contrastive learning. To adapt it efficiently for the medical domain, we applied Low-Rank Adaptation (LoRA), allowing us to fine-tune only ~0.03% of the model’s parameters while preserving performance. The model is trained with a custom contrastive loss to bring matching image-text pairs closer and push mismatched ones apart. An inference pipeline is also provided, which takes an input X-ray image and a set of candidate sentences, and returns the most semantically relevant one based on similarity in the embedding space.
 
 ---
+
+### `Auto_Researcher`
+#### Auto_Researcher:Multi-Agent AI-Powered Research Assistant
+Auto_Researcher is a prototype multi-agent system built with AutoGen that automates the early stages of academic research. The goal is to find and summarize recent papers on a given topic using an LLM-driven agentic workflow.
+Current Agents:
+- PlannerAgent – Coordinates the task and sends instructions to other agents.
+- PaperFetcherAgent – Fetches top 3 recent papers on a given topic using arXiv API.
+
+AutoGen is an open-source framework by Microsoft for building multi-agent LLM applications. It allows you to easily define agents with distinct roles, let them communicate through natural language, and collaboratively solve complex tasks.
+
+---
