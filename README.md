@@ -203,11 +203,12 @@ This project aims to fine-tune the CLIP (Contrastive Language–Image Pre-traini
 ---
 
 ### `Auto_Researcher`
-#### Auto_Researcher:Multi-Agent AI-Powered Research Assistant
+#### Auto_Researcher: Multi-Agent AI-Powered Research Assistant
 Auto_Researcher is a prototype multi-agent system built with AutoGen that automates the early stages of academic research. The goal is to find and summarize recent papers on a given topic using an LLM-driven agentic workflow.
 Current Agents:
 - PlannerAgent – Coordinates the task and sends instructions to other agents.
 - PaperFetcherAgent – Fetches top 3 recent papers on a given topic using arXiv API.
+- SummarizerAgent - Uses the information generated and given by PaperFetcherAgent and summarizes them.
 
 AutoGen is an open-source framework by Microsoft for building multi-agent LLM applications. It allows you to easily define agents with distinct roles, let them communicate through natural language, and collaboratively solve complex tasks.
 
