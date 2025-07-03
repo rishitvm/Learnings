@@ -216,7 +216,7 @@ AutoGen is an open-source framework by Microsoft for building multi-agent LLM ap
 
 ### `Insurance_Claim_Voice_Agent`
 #### Voice-Based Insurance Claim Clarification Assistant
-“Voice-Based Insurance Claim Clarification Assistant” is a project that streamlines the process of following up on insurance claims through a natural, voice‑driven conversation. It combines state‑of‑the‑art speech technologies—Coqui TTS for text‑to‑speech and FasterWhisper for automatic speech recognition—together with a large language model accessed via Groq API to ask targeted questions about claim status (“Accepted,” “Rejected,” “On Hold,” or “Needs Changes”), elicit precise reasons, and confirm document completeness. Every exchange is queued and played back in real time, then transcribed, and the full dialogue—along with final status, reason, and a concise summary—is persisted in MongoDB for audit and reporting. Developers can extend or deploy the assistant as a FastAPI microservice, or run it locally from the command line. The result is a hands‑free, efficient workflow for insurance teams, hospital staff, or third‑party administrators to automatically capture and record insurance claim clarifications without manual note‑taking or data entry.
+“Voice-Based Insurance Claim Clarification Assistant” is a project that streamlines the process of following up on insurance claims through a natural, voice‑driven conversation as general humans do. It combines state‑of‑the‑art speech technologies—Coqui TTS for text‑to‑speech and FasterWhisper for automatic speech recognition—together with a large language model accessed via Groq API to ask targeted questions about claim status (“Accepted,” “Rejected,” “On Hold,” or “Needs Changes”), elicit precise reasons, and confirm document completeness. Every exchange is queued and played back in real time, then transcribed, and the full dialogue—along with final status, reason, and a concise summary—is persisted in MongoDB for audit and reporting. Deployed the assistant as a FastAPI microservice and interacted with Streamlit. The result is a hands‑free, efficient workflow for insurance teams, hospital staff, or third‑party administrators to automatically capture and record insurance claim clarifications without manual note‑taking or data entry.
 
 - ASR (Automatic Speech Recognition) – Faster-Whisper
   * Model: tiny.en
@@ -228,7 +228,7 @@ AutoGen is an open-source framework by Microsoft for building multi-agent LLM ap
   * Used for: Generating natural-sounding speech from LLM-generated text responses.
   * Language: English (VCTK dataset-based voices)
 
-- LLM (Large Language Model) – Meta llama-3.1-8b-instant
+- LLM (Large Language Model) – Meta LLaMA
   * Model: llama-3.1-8b-instant (via Groq API)
   * Used for: Understanding conversation context, generating follow-up questions, summarizing interactions, and deciding when the conversation should end.
   * Speed: Optimized for ultra-low latency with Groq’s accelerated inference.
@@ -236,9 +236,12 @@ AutoGen is an open-source framework by Microsoft for building multi-agent LLM ap
 - Database – MongoDB
   * Used for: Storing user data, claim status, ASR transcript, LLM conversation history, and final summary.
   * Web Framework – FastAPI
-  * Used for: Exposing a lightweight HTTP endpoint (/run) to trigger the assistant remotely.
+  * Used for: Exposing a lightweight HTTP endpoint (/start-agent) to trigger the assistant remotely.
 
 - Audio Management – Multithreaded Queue System
   * Used for: Smooth playback of TTS chunks while simultaneously recording user response.
+
+- User Interface – Streamlit
+  * Used for: A simple UI python library to interact with the agent
 
 ---
