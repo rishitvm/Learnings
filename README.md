@@ -213,3 +213,32 @@ Current Agents:
 AutoGen is an open-source framework by Microsoft for building multi-agent LLM applications. It allows you to easily define agents with distinct roles, let them communicate through natural language, and collaboratively solve complex tasks.
 
 ---
+
+### `Insurance_Claim_Voice_Agent`
+#### Voice-Based Insurance Claim Clarification Assistant
+“Voice-Based Insurance Claim Clarification Assistant” is a project that streamlines the process of following up on insurance claims through a natural, voice‑driven conversation. It combines state‑of‑the‑art speech technologies—Coqui TTS for text‑to‑speech and FasterWhisper for automatic speech recognition—together with a large language model accessed via Groq API to ask targeted questions about claim status (“Accepted,” “Rejected,” “On Hold,” or “Needs Changes”), elicit precise reasons, and confirm document completeness. Every exchange is queued and played back in real time, then transcribed, and the full dialogue—along with final status, reason, and a concise summary—is persisted in MongoDB for audit and reporting. Developers can extend or deploy the assistant as a FastAPI microservice, or run it locally from the command line. The result is a hands‑free, efficient workflow for insurance teams, hospital staff, or third‑party administrators to automatically capture and record insurance claim clarifications without manual note‑taking or data entry.
+
+- ASR (Automatic Speech Recognition) – Faster-Whisper
+  * Model: tiny.en
+  * Used for: Converting live microphone input (spoken language) into text in real time.
+  * Framework: RealtimeSTT wrapper for smooth integration.
+
+- TTS (Text-to-Speech) – Coqui TTS
+  * Model: tts_models/en/vctk/vits
+  * Used for: Generating natural-sounding speech from LLM-generated text responses.
+  * Language: English (VCTK dataset-based voices)
+
+- LLM (Large Language Model) – Meta llama-3.1-8b-instant
+  * Model: llama-3.1-8b-instant (via Groq API)
+  * Used for: Understanding conversation context, generating follow-up questions, summarizing interactions, and deciding when the conversation should end.
+  * Speed: Optimized for ultra-low latency with Groq’s accelerated inference.
+
+- Database – MongoDB
+  * Used for: Storing user data, claim status, ASR transcript, LLM conversation history, and final summary.
+  * Web Framework – FastAPI
+  * Used for: Exposing a lightweight HTTP endpoint (/run) to trigger the assistant remotely.
+
+- Audio Management – Multithreaded Queue System
+  * Used for: Smooth playback of TTS chunks while simultaneously recording user response.
+
+---
